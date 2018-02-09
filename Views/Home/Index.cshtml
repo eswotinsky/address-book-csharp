@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Address Book</title>
-    </head>
-    <body>
-        <h1>My Contacts</h1>
-        <ul>
-            @foreach(var contact in Model)
-            {
-                <li><strong>@contact.GetName()</strong> | <em>@contact.GetPhoneNumber()</em></li>
-                <p>@contact.GetAddress()</p>
-                <hr>
-            }
-        </ul>
+<head>
+    <meta charset="utf-8">
+    <title>Address Book</title>
+</head>
+<body>
+    <h1>My Contacts</h1>
+    <ul>
+        @foreach(var contact in Model)
+        {
+            <li><strong>@contact.GetName()</strong> | <em>@contact.GetPhoneNumber()</em></li>
+            <p>
+                @contact.GetAddress().GetStreet()<br>
+                @contact.GetAddress().GetCity(), @contact.GetAddress().GetState()<br>
+                @contact.GetAddress().GetZipCode()
+            </p>
+            <hr>
+        }
+    </ul>
 
-        <form action="/contacts/delete" method="post">
-            <button type="submit">Clear All Contacts</button>
-        </form>
+    <form action="/contacts/delete" method="post">
+        <button type="submit">Clear All Contacts</button>
+    </form>
 
-        <a href="/contacts/add">Add a new contact.</a>
-    </body>
+    <a href="/contacts/add">Add a new contact.</a>
+</body>
 </html>
