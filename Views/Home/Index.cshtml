@@ -9,7 +9,7 @@
         <ul>
             @foreach(var contact in Model)
             {
-                <li>@contact.GetName() | @contact.GetPhoneNumber()</li>
+                <li><strong>@contact.GetName()</strong> | <em>@contact.GetPhoneNumber()</em></li>
                 <p>@contact.GetAddress()</p>
                 <hr>
             }
