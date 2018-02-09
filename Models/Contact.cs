@@ -9,7 +9,7 @@ namespace AddressBook.Models
     private string _phoneNumber;
     private string _address; //may refactor this as another object
 
-    private static List<Contact> _myContacts;
+    private static List<Contact> _myContacts = new List<Contact> {};
 
     public Contact (string name, string phoneNumber, string address)
     {
