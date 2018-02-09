@@ -4,10 +4,6 @@ A web app, built with C#, that allows users to create a digital "address book" o
 
 ## Installation
 
-No installation required - view the project online at [GitHub.io](https://eswotinsky.github.io/address-book-csharp/).
-
-To instead setup a local copy on your machine:
-
 1. Install .NET, if not already present on your local machine.
 
 2. Clone this repository.
