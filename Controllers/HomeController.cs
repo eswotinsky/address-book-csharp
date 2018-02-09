@@ -14,13 +14,13 @@ namespace AddressBook.Controllers
         }
 
         [HttpGet("/contacts/add")]
-        public ActionResult ContactForm()
+        public ActionResult CreateForm()
         {
             return View();
         }
 
         [HttpPost("/")]
-        public ActionResult UpdateContacts()
+        public ActionResult Create()
         {
             Address newAddress = new Address(Request.Form["street"], Request.Form["city"], Request.Form["state"], Request.Form["zip-code"]);
             Contact newContact = new Contact(Request.Form["name"], Request.Form["phone-number"], newAddress);

@@ -7,7 +7,7 @@ namespace AddressBook.Models
     {
         private string _name;
         private string _phoneNumber;
-        private Address _address; //may refactor this as another object
+        private Address _address;
 
         private static List<Contact> _myContacts = new List<Contact> {};
 
@@ -17,7 +17,7 @@ namespace AddressBook.Models
             _phoneNumber = phoneNumber;
             _address = address;
         }
-        
+
         public string GetName()
         {
             return _name;

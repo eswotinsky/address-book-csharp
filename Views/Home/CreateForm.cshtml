@@ -1,0 +1,36 @@
+@{
+    Layout = "_Layout";
+}
+
+<h1>Add a New Contact</h1>
+
+<form action="/" method="post">
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="name">Enter Contact Name:</label>
+            <input type="text" class="form-control" name="name">
+
+            <label for="phone-number">Enter Contact Phone Number:</label>
+            <input type="text" class="form-control" name="phone-number">
+
+            <label for="street">Enter Contact Street:</label>
+            <input type="text" class="form-control" name="street">
+
+            <label for="city">Enter Contact City:</label>
+            <input type="text" class="form-control" name="city">
+
+            <label for="state">Enter Contact State:</label>
+            <input type="text" class="form-control" name="state">
+
+            <label for="zip-code">Enter Contact ZIP Code:</label>
+            <input type="text" class="form-control" name="zip-code">
+        </div>
+    </div>
+</div>
+
+    <button class="btn btn-success" type="submit">Submit</button>
+    <button class="btn btn-default" type="button"><a href="/">View All Contacts</a></button>
+
+</form>
