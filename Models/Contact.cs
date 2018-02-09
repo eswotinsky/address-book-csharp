@@ -43,5 +43,10 @@ namespace AddressBook.Models
       return _myContacts;
     }
 
+    public static void ClearAll()
+    {
+      _myContacts.Clear();
+    }
+
   }
 }
