@@ -13,7 +13,7 @@ A web app, built with C#, that allows users to create a digital "address book" o
  ```
  $ dotnet restore
  ```
-(not required for .NET Core 2.0 SDK or newer releases)
+(above not required for .NET Core 2.0 SDK or newer releases)
 
  ```
  $ dotnet run
